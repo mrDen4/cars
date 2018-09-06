@@ -1,0 +1,39 @@
+.callback {
+
+    .callback__container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .callback__title {
+        margin-right: 100px;
+    }
+
+    .callback__btn {
+        height: 50px;
+        width: 200px;
+        cursor: pointer;
+        background: #f9aa33;
+        border: none;
+        margin-right: 30px;
+        transition: .3s;
+
+        &:hover {
+            background: #232f34;
+            color: #ffffff;
+        }
+    }
+
+    .callback__link {
+        text-transform: uppercase;
+        color: #000000;
+        transition: .3s;
+
+        &:hover {
+            color: #f9aa33;
+        }
+    }
+}

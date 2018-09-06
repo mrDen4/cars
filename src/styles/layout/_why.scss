@@ -1,0 +1,57 @@
+.why {
+    background: #232f34;
+    position: relative;
+
+    .why__img {
+        position: absolute;
+        width: 770px;
+        height: 700px;
+        background: url('../images/why-bg.png')
+    }
+
+    .why__container {
+        align-items: flex-end;
+        padding-bottom: 100px;
+    }
+
+    .why__content {
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        width: 40%;
+    }
+
+    .content__title {
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 50px;
+    }
+
+    .content__list {
+        display: flex;
+        flex-direction: column;
+
+        .content__item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .item__title {
+            color: #f9aa33;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+            margin: 0;
+            margin-bottom: 15px;
+        }
+
+        .item__text {
+            margin: 0;
+        }
+    }
+}
