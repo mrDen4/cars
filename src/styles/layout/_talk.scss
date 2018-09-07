@@ -22,6 +22,11 @@
         border-right: 1px solid #ffffff;
         padding: 20px;
 
+        @include horizon() {
+            padding: 0;
+            border: none;
+        }
+
         &:nth-child(even) {
             border-right: none;
         }

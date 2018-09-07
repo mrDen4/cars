@@ -14,20 +14,37 @@
         width: 100%;
         justify-content: space-between;
 
+        @include horizon() {
+            flex-direction: column;
+        }
+
         .team__item {
             display: flex;
             flex-direction: column;
             width: 33%;
             padding: 40px;
 
+            @include horizon() {
+                width: 100%;
+                padding: 0;
+            }
+
             &:first-child {
                 padding-left: 0;
                 border-right: 2px solid #ffffff;
+
+                @include horizon() {
+                    border-right: none;
+                }
             }
             
             &:last-child {
                 padding-right: 0;
                 border-left: 2px solid #ffffff;
+
+                @include horizon() {
+                    border-left: none;
+                }
             }
         }
 
@@ -35,6 +52,21 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+
+            @include horizon() {
+                width: 100%;
+            }
+        }
+
+        .top__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .item__title {
+                text-align: center;
+            }
         }
     }
 }

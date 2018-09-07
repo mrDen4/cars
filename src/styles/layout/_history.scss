@@ -6,6 +6,10 @@
         flex-direction: row;
         padding-top: 100px;
         padding-bottom: 100px;
+
+        @include horizon() {
+            flex-direction: column;
+        }
     }
 
     .history__img {
@@ -14,6 +18,10 @@
         background-color: #2a3941;
         position: relative;
         margin-right: 50px;
+
+        @include horizon() {
+            width: 100%;
+        }
 
         .img__text {
             position: absolute;
@@ -24,5 +32,9 @@
 
     .history__content {
         width: 60%;
+
+        @include horizon() {
+            width: 100%;
+        }
     }
 }

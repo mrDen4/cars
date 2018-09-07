@@ -6,7 +6,11 @@
         position: absolute;
         width: 770px;
         height: 700px;
-        background: url('../images/why-bg.png')
+        background: url('../images/why-bg.png');
+
+        @include horizon() {
+            width: 100%;
+        }
     }
 
     .why__container {
