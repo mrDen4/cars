@@ -1,0 +1,29 @@
+.cars {
+    background: #232f34;
+    color: #ffffff;
+
+    .cars__container {
+        padding-bottom: 100px;
+    }
+
+    .cars__title {
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 50.06px;
+        margin-bottom: 50px;
+    }
+
+    .cars__slider {
+        display: flex;
+    }
+
+    .slider__slide {
+        height: 200px;
+        width: 16%;
+        background: #ffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2px;
+    }
+}

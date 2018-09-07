@@ -1,0 +1,37 @@
+.footer {
+    background-color: #232f34;
+    color: #ffffff;
+
+    .footer__container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .rp__text {
+
+    }
+
+    .footer__rp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: #ffffff;
+        transition: .3s;
+
+        &:hover {
+            color: #f9aa33;
+        }
+    }
+
+    .rp__logo {
+        width: 125px;
+        height: 45px;
+    }
+
+    .rp__text {
+        text-decoration: none;
+    }
+}
