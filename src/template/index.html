@@ -14,6 +14,11 @@
 <body>
     <header class="header">
         <div class="container header__container">
+            <button class="header__btn">
+                <div class="menu__block"></div>
+                <div class="menu__block"></div>
+                <div class="menu__block"></div>
+            </button>
             <a href="#" class="header__logo">Автосервис <span class="logo__bold">"Левша"</span></a>
             <ul class="header__nav">
                 <li class="nav__item">
@@ -199,6 +204,7 @@
         </div>
     </section>
     <section class="section free">
+        <div class="free__img"></div>
         <div class="container free__container">
             <div class="free__text">
                 <h1 class="free__title">Бесплатная консультация от мастера</h1>
@@ -284,7 +290,9 @@
     </section>
     <section class="section contacts">
         <div class="container contacts__container">
-            <div class="contacts__map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad99e9b04010476e0b8b82e63f27383b37688206f914f7e1c8cfde0c3da4226d9&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script></div>
+            <div class="contacts__map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad99e9b04010476e0b8b82e63f27383b37688206f914f7e1c8cfde0c3da4226d9&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
             <div class="contacts__info">
                 <p class="info__name">Адрес</p>
                 <p class="info__text">Челябинск, <br> ул.Маслобазовая 6/2</p>
@@ -304,7 +312,25 @@
             </a>
         </div>
     </footer>
-
+    <div class="bg__modal"></div>
+    <ul class="menu">
+        <div class="menu__exit">&times;</div>
+        <li class="menu__item">
+            <a href="#" class="item__link">Услуги</a>
+        </li>
+        <li class="menu__item">
+            <a href="#" class="item__link">Цены</a>
+        </li>
+        <li class="menu__item">
+            <a href="#" class="item__link">Акции</a>
+        </li>
+        <li class="menu__item">
+            <a href="#" class="item__link">Отзывы</a>
+        </li>
+        <li class="menu__item">
+            <a href="#" class="item__link">Контакты</a>
+        </li>
+    </ul>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./assets/scripts/main.js"></script>

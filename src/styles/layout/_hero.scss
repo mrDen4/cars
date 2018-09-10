@@ -13,6 +13,9 @@
         top: 0;
         background: url('../images/hero-bg.png') center right no-repeat;
 
+        @include tablets() {
+            width: 100%;
+        }
     }
 
     .hero__content {
@@ -21,7 +24,7 @@
         width: 30vw;
         z-index: 50;
 
-        @include horizon() {
+        @include tablets() {
             width: 100%;
         }
     }
@@ -32,8 +35,11 @@
         font-weight: 700;
         line-height: 63px;
 
-        @include horizon() {
+        @include tablets() {
             width: 100%;
+        }
+
+        @include horizon {
             font-size: 45px;
         }
     }

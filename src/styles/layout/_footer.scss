@@ -8,8 +8,10 @@
         padding-top: 20px;
         padding-bottom: 20px;
 
-        @include horizon() {
+        @include tablets() {
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
     }
 
@@ -37,5 +39,6 @@
 
     .rp__text {
         text-decoration: none;
+        margin-right: 20px;
     }
 }

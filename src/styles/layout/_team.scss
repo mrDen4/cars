@@ -14,7 +14,7 @@
         width: 100%;
         justify-content: space-between;
 
-        @include horizon() {
+        @include tablets() {
             flex-direction: column;
         }
 
@@ -24,16 +24,18 @@
             width: 33%;
             padding: 40px;
 
-            @include horizon() {
+            @include tablets() {
                 width: 100%;
                 padding: 0;
+                margin-bottom: 20px;
+                border-bottom: 2px solid #ffffff;
             }
 
             &:first-child {
                 padding-left: 0;
                 border-right: 2px solid #ffffff;
 
-                @include horizon() {
+                @include tablets() {
                     border-right: none;
                 }
             }
@@ -42,7 +44,7 @@
                 padding-right: 0;
                 border-left: 2px solid #ffffff;
 
-                @include horizon() {
+                @include tablets() {
                     border-left: none;
                 }
             }
@@ -53,8 +55,9 @@
             flex-direction: row;
             justify-content: space-between;
 
-            @include horizon() {
+            @include tablets() {
                 width: 100%;
+                justify-content: space-around;
             }
         }
 

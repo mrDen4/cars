@@ -57,10 +57,12 @@
     .slider__slide {
         border-right: 1px solid #ffffff;
         padding: 20px;
+        width: 50%;
 
         @include horizon() {
             padding: 0;
             border: none;
+            width: 100%;
         }
 
         &:nth-child(even) {

@@ -35,6 +35,7 @@
         
         @include horizon() {
             width: 100%;
+            align-items: center;
         }
     }
 
@@ -61,6 +62,10 @@
         cursor: pointer;
         margin-top: 50px;
         transition: .3s;
+
+        @include tablets() {
+            margin-top: 20px;
+        }
 
         &:hover {
             background: #2a3941;
