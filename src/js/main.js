@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  //Меню на мобилках и планшетах
   $('.header__btn').on('click', function () {
     $('.menu').toggleClass('menu--active');
     $('.bg__modal').toggleClass('bg__modal--active');
@@ -13,7 +14,20 @@ $(document).ready(function () {
     $('.menu').removeClass('menu--active');
     $('.bg__modal').removeClass('bg__modal--active');
   });
-  
+
+  //Отправка данных на мейл
+  $("#free-form").submit(function () {
+    $.ajax({
+        type: "POST",
+        url: "assets/php/mail.php",
+        data: $(this).serialize()
+    }).done(function () {
+        alert('DONE');           
+    });
+    return false;
+});
+
+  //Слайдеры
   $('.talk__slider').slick({
     infinite: true,
     slidesToShow: 2,
