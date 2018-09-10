@@ -14,8 +14,44 @@
         line-height: 50px;
     }
 
+    .talk__wrap {
+        position: relative;
+        width: 100%;
+    }
+
+    .talk__arrow-right {
+        width: 15px;
+        height: 31px;
+        background: url('../images/arrow-right.png');
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        z-index: 100;
+        cursor: pointer;
+
+        @include horizon() {
+            right: 0;
+        }
+    }
+
+    .talk__arrow-left {
+        width: 15px;
+        height: 31px;
+        background: url('../images/arrow-left.png');
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        z-index: 100;
+        cursor: pointer;
+
+        @include horizon() {
+            left: 0;
+        }
+    }
+
     .talk__slider {
         display: flex;
+        width: 100%;
     }
 
     .slider__slide {

@@ -17,6 +17,11 @@
             border: 1px solid #ffffff;
             transition: .3s;
 
+            @include horizon() {
+                width: 50%;
+                font-size: 14px;
+            }
+
             &:hover {
                 border-color: #f9aa33;
             }
@@ -31,6 +36,24 @@
 
             &:nth-child(5) {
                 border-left: none;
+            }
+
+            &:nth-child(3) {
+                @include horizon() {
+                    border-left: none;
+                }
+            }
+
+            &:nth-child(7) {
+                @include horizon() {
+                    border-left: none;
+                }
+            }
+
+            &:nth-child(2n) {
+                @include horizon() {
+                    border-right: none;
+                }
             }
 
             &--top {

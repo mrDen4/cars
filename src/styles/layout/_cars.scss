@@ -12,6 +12,41 @@
         line-height: 50.06px;
         margin-bottom: 50px;
     }
+    
+    .cars__wrap {
+        position: relative;
+        width: 100%;
+    }
+
+    .cars__arrow-right {
+        width: 15px;
+        height: 31px;
+        background: url('../images/arrow-right.png');
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        z-index: 100;
+        cursor: pointer;
+
+        @include horizon() {
+            right: 0;
+        }
+    }
+
+    .cars__arrow-left {
+        width: 15px;
+        height: 31px;
+        background: url('../images/arrow-left.png');
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        z-index: 100;
+        cursor: pointer;
+
+        @include horizon() {
+            left: 0;
+        }
+    }
 
     .cars__slider {
         display: flex;

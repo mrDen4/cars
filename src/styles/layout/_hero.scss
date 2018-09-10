@@ -20,6 +20,10 @@
         flex-direction: column;
         width: 30vw;
         z-index: 50;
+
+        @include horizon() {
+            width: 100%;
+        }
     }
 
     .hero__title {
@@ -27,6 +31,11 @@
         font-size: 68px;
         font-weight: 700;
         line-height: 63px;
+
+        @include horizon() {
+            width: 100%;
+            font-size: 45px;
+        }
     }
 
     .hero__text {

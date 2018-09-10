@@ -23,6 +23,12 @@
         flex-direction: column;
         color: #ffffff;
         width: 40%;
+        z-index: 100;
+
+        @include horizon() {
+            width: 100%;
+            z-index: 100;
+        }
     }
 
     .content__title {
