@@ -7,8 +7,9 @@
         padding-top: 100px;
         padding-bottom: 100px;
 
-        @include horizon() {
+        @include tablets() {
             flex-direction: column;
+            align-items: center;
         }
     }
 
@@ -19,8 +20,13 @@
         position: relative;
         margin-right: 50px;
 
-        @include horizon() {
+        @include tablets() {
+            width: 40%;
+        }
+
+        .img__photo {
             width: 100%;
+            height: 100%;
         }
 
         .img__text {
@@ -33,7 +39,7 @@
     .history__content {
         width: 60%;
 
-        @include horizon() {
+        @include tablets() {
             width: 100%;
         }
     }
