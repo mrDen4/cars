@@ -75,6 +75,10 @@
             display: flex;
             align-items: center;
 
+            @include horizon() {
+                padding: 15px;
+            }
+
             &:hover {
                 color: #f9aa33;
             }

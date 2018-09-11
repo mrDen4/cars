@@ -15,7 +15,6 @@
     .contacts__map {
         width: 50%;
         height: 100%;
-        background: #ffee00;
         margin-right: 70px;
 
         @include horizon() {
@@ -42,6 +41,7 @@
     .info__text {
         font-weight: 700;
         font-size: 20px;
+        margin: 0;
     }
 
     .info__link {

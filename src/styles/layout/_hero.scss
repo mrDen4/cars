@@ -4,6 +4,16 @@
     min-height: 620px;
     position: relative;
     width: 100vw;
+    height: 75vh;
+
+    .hero__container {
+        padding-top: 100px;
+        padding-bottom: 50px;
+
+        @include tablets() {
+            padding-top: 200px;
+        }
+    }
 
     .hero__img {
         height: 100%;
@@ -21,7 +31,7 @@
     .hero__content {
         display: flex;
         flex-direction: column;
-        width: 30vw;
+        width: 40vw;
         z-index: 50;
 
         @include tablets() {
