@@ -15,6 +15,11 @@
 
     .callback__title {
         margin-right: 100px;
+        color: #232f34;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 30px;
 
         @include horizon() {
             margin-right: 0px;
@@ -30,6 +35,13 @@
         border: none;
         margin-right: 30px;
         transition: .3s;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;        
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 28px;
+        text-transform: uppercase;
+        letter-spacing: 0.25px;
+        color: #232f34;
 
         @include horizon() {
             margin-right: 0px;
@@ -43,9 +55,15 @@
     }
 
     .callback__link {
-        text-transform: uppercase;
-        color: #000000;
         transition: .3s;
+        color: #232f34;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;        
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 28px;
+        text-decoration: underline;
+        text-transform: uppercase;
+        letter-spacing: 0.25px;
 
         &:hover {
             color: #f9aa33;
