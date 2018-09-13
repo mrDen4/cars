@@ -12,6 +12,40 @@ $(document).ready(function () {
 
   $('.bg__modal').on('click', function () {
     $('.menu').removeClass('menu--active');
+    $('.phone-popup').removeClass('phone-popup--active');
+    $('.entry-popup').removeClass('entry-popup--active');
+    $('.bg__modal').removeClass('bg__modal--active');
+  });
+
+  //Заказать звонок
+  $('.phone__btn').on('click', function () {
+    $('.phone-popup').toggleClass('phone-popup--active');
+    $('.bg__modal').toggleClass('bg__modal--active');
+  });
+
+  $('.phone-popup__exit').on('click', function () {
+    $('.phone-popup').removeClass('phone-popup--active');
+    $('.bg__modal').removeClass('bg__modal--active');
+  });
+
+  $('.form__btn-exit').on('click', function () {
+    $('.entry-popup').removeClass('entry-popup--active');
+    $('.bg__modal').removeClass('bg__modal--active');
+  });
+
+  //Записаться в автосервис
+  $('.info__btn').on('click', function () {
+    $('.entry-popup').toggleClass('entry-popup--active');
+    $('.bg__modal').toggleClass('bg__modal--active');
+  });
+
+  $('.entry-popup__exit').on('click', function () {
+    $('.entry-popup').removeClass('entry-popup--active');
+    $('.bg__modal').removeClass('bg__modal--active');
+  });
+
+  $('.form__btn-exit').on('click', function () {
+    $('.entry-popup').removeClass('entry-popup--active');
     $('.bg__modal').removeClass('bg__modal--active');
   });
 
