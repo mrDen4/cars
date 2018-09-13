@@ -54,6 +54,10 @@
         }
     }
 
+    .callback__btn--free-btn {
+        @extend .callback__btn;
+    }
+
     .callback__link {
         transition: .3s;
         color: #232f34;

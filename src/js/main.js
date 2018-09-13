@@ -14,6 +14,7 @@ $(document).ready(function () {
     $('.menu').removeClass('menu--active');
     $('.phone-popup').removeClass('phone-popup--active');
     $('.entry-popup').removeClass('entry-popup--active');
+    $('.free-popup').removeClass('free-popup--active');
     $('.bg__modal').removeClass('bg__modal--active');
   });
 
@@ -46,6 +47,22 @@ $(document).ready(function () {
 
   $('.form__btn-exit').on('click', function () {
     $('.entry-popup').removeClass('entry-popup--active');
+    $('.bg__modal').removeClass('bg__modal--active');
+  });
+
+  //Бесплатная консультация
+  $('.callback__btn--free-btn').on('click', function () {
+    $('.free-popup').toggleClass('free-popup--active');
+    $('.bg__modal').toggleClass('bg__modal--active');
+  });
+
+  $('.free-popup__exit').on('click', function () {
+    $('.free-popup').removeClass('free-popup--active');
+    $('.bg__modal').removeClass('bg__modal--active');
+  });
+
+  $('.form__btn-exit').on('click', function () {
+    $('.free-popup').removeClass('free-popup--active');
     $('.bg__modal').removeClass('bg__modal--active');
   });
 
