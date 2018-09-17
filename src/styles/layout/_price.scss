@@ -1,0 +1,23 @@
+.price {
+    background: #232f34;
+    color: #ffffff;
+
+    .price__container {
+        padding-top: 100px;
+        padding-bottom: 50px;
+
+        @include horizon() {
+            padding-top: 200px;
+        }
+    }
+
+    .price__title {
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 50.06px;
+
+        @include tablets() {
+            text-align: center;
+        }
+    }
+}

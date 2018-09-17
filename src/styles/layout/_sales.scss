@@ -1,0 +1,120 @@
+.sales {
+    background: #232f34;
+    color: #ffffff;
+
+    .sales__container {
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        @include horizon() {
+            padding-top: 200px;
+        }
+    }
+
+    .sales__title {
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 50.06px;
+
+        @include horizon() {
+            font-size: 36px;
+        }
+    }
+
+    .sales__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .list__item {
+        width: 45%;
+        min-height: 340px;
+        margin-bottom: 50px;
+        padding-top: 55px;
+        padding-left: 80px;
+        padding-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @include tablets() {
+            width: 100%;
+            padding-left: 10px;
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
+
+        &--1 {
+            background: url('../images/sales/1.png') center center no-repeat;
+            background-size: cover;
+        }
+        
+        &--2 {
+            background: url('../images/sales/2.png') center center no-repeat;
+            background-size: cover;
+        }
+        
+        &--3 {
+            background: url('../images/sales/3.png') center center no-repeat;
+            background-size: cover;
+        }
+
+        &--4 {
+            background: url('../images/sales/4.png') center center no-repeat;
+            background-size: cover;
+        }
+
+        &--5 {
+            background: url('../images/sales/5.png') center center no-repeat;
+            background-size: cover;
+        }
+
+        &--6 {
+            background: url('../images/sales/6.png') center center no-repeat;
+            background-size: cover;
+        }
+
+        .item__title {
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 40px;
+            margin: 0;
+        }
+
+        .item__text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 23px;
+            margin: 0;
+        }
+
+        .item__btn {
+            min-height: 55px;
+            background-color: #f9aa33;
+            color: #232f34;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 28px;
+            text-transform: uppercase;
+            letter-spacing: 0.25px;
+            border: none;
+            padding: 15px 30px;
+            cursor: pointer;
+            transition: .3s;
+
+            @include phones() {
+                margin-top: 20px;
+                padding: 10px 10px;
+                width: 100%;
+            }
+
+            &:hover {
+                background: #ffffff;
+            }
+        }
+    }
+}

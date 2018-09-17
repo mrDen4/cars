@@ -1,0 +1,129 @@
+.adress {
+    background: #232f34;
+    color: #ffffff;
+
+    .adress__container {
+        padding-top: 100px;
+        padding-bottom: 50px;
+
+        @include horizon() {
+            padding-top: 200px;
+        }
+    }
+
+    .adress__title {
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 50.06px;
+
+        @include tablets() {
+            text-align: center;
+        }
+    }
+
+    .adress__content {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+
+        @include tablets() {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .content__text {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+
+        @include tablets() {
+            width: 100%;
+            align-items: center;
+        }
+    }
+
+    .content__map {
+        width: 65%;
+        height: 600px;
+
+        @include tablets() {
+            width: 90%;
+            height: 350px;
+            display: flex;
+            margin-top: 50px;
+        }
+
+        @include phones() {
+            height: 600px;
+        }
+    }
+
+    .text__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 40px;
+        margin: 0;
+        margin-top: 30px;
+
+        @include tablets() {
+            text-align: center;
+        }
+    }
+
+    .text__bold {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 38px;
+        margin: 0;
+
+        @include tablets() {
+            text-align: center;
+        }
+    }
+
+    .text__link {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 38px;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: #ffffff;
+        transition: .3s;
+
+        @include tablets() {
+            text-align: center;
+        }
+
+        &:hover {
+            color: #f9aa33;
+            text-decoration: underline;
+        }
+
+        &:last-child {
+            margin-bottom: 30px;
+        }
+    }
+    
+    .text__btn {
+        width: 279px;
+        height: 55px;
+        margin-top: 30px;
+        background-color: #f9aa33;
+        color: #232f34;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 28px;
+        text-transform: uppercase;
+        letter-spacing: 0.25px;
+        cursor: pointer;
+        transition: .3s;
+        border: none;
+
+        &:hover {
+            background: #ffffff;
+        }
+    }
+}

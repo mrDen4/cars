@@ -36,7 +36,7 @@ $(document).ready(function () {
   });
 
   //Записаться в автосервис
-  $('.info__btn, .btns__btn').on('click', function () {
+  $('.info__btn, .btns__btn, .item__btn').on('click', function () {
     $('.entry-popup').toggleClass('entry-popup--active');
     $('.bg__modal').toggleClass('bg__modal--active');
   });
