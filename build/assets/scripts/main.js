@@ -15,6 +15,7 @@ $(document).ready(function () {
     $('.phone-popup').removeClass('phone-popup--active');
     $('.entry-popup').removeClass('entry-popup--active');
     $('.free-popup').removeClass('free-popup--active');
+    $('.sale-popup').removeClass('sale-popup--active');
     $('.bg__modal').removeClass('bg__modal--active');
   });
 
@@ -35,7 +36,7 @@ $(document).ready(function () {
   });
 
   //Записаться в автосервис
-  $('.info__btn').on('click', function () {
+  $('.info__btn, .btns__btn').on('click', function () {
     $('.entry-popup').toggleClass('entry-popup--active');
     $('.bg__modal').toggleClass('bg__modal--active');
   });
@@ -51,7 +52,7 @@ $(document).ready(function () {
   });
 
   //Бесплатная консультация
-  $('.callback__btn--free-btn').on('click', function () {
+  $('.callback__btn--free-btn, .callback__btn').on('click', function () {
     $('.free-popup').toggleClass('free-popup--active');
     $('.bg__modal').toggleClass('bg__modal--active');
   });
@@ -65,6 +66,23 @@ $(document).ready(function () {
     $('.free-popup').removeClass('free-popup--active');
     $('.bg__modal').removeClass('bg__modal--active');
   });
+
+  //Получить скикду
+    //Бесплатная консультация
+    $('.hero__btn').on('click', function () {
+      $('.sale-popup').toggleClass('sale-popup--active');
+      $('.bg__modal').toggleClass('bg__modal--active');
+    });
+  
+    $('.sale-popup__exit').on('click', function () {
+      $('.sale-popup').removeClass('sale-popup--active');
+      $('.bg__modal').removeClass('bg__modal--active');
+    });
+  
+    $('.form__btn-exit').on('click', function () {
+      $('.sale-popup').removeClass('sale-popup--active');
+      $('.bg__modal').removeClass('bg__modal--active');
+    });
 
   //Отправка данных на мейл
   $("#free-form").submit(function () {

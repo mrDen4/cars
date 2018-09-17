@@ -1041,6 +1041,90 @@ ul {
     .free-popup .form__btns .form__btn-exit:hover {
       color: #f9aa33; }
 
+.sale-popup {
+  position: fixed;
+  width: 470px;
+  height: 410px;
+  top: 50%;
+  left: 50%;
+  margin-top: -205px;
+  margin-left: -235px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+  z-index: 9999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none; }
+  @media screen and (max-width: 678px) {
+    .sale-popup {
+      width: 100vw;
+      margin-left: 0;
+      left: 0; } }
+  .sale-popup--active {
+    display: flex; }
+  .sale-popup .sale-popup__exit {
+    position: absolute;
+    color: #232f34;
+    right: 20px;
+    top: 10px;
+    font-size: 35px;
+    transition: .3s;
+    cursor: pointer; }
+    .sale-popup .sale-popup__exit:hover {
+      color: #f9aa33; }
+  .sale-popup .sale-popup__form {
+    display: flex;
+    flex-direction: column; }
+    .sale-popup .sale-popup__form .form__inp {
+      border: none;
+      border-bottom: 1px solid #232f34;
+      margin-bottom: 15px;
+      padding: 10px; }
+      .sale-popup .sale-popup__form .form__inp:focus {
+        outline: none; }
+  .sale-popup .phone-popup__title {
+    margin-top: 0;
+    color: #232f34;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 40px; }
+  .sale-popup .form__btns .form__btn {
+    width: 155px;
+    height: 55px;
+    background-color: #f9aa33;
+    color: #232f34;
+    border: none;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.25px;
+    cursor: pointer;
+    margin-right: 50px;
+    transition: .3s; }
+    .sale-popup .form__btns .form__btn:hover {
+      background: #232f34;
+      color: #ffffff; }
+  .sale-popup .form__btns .form__btn-exit {
+    background: none;
+    border: none;
+    color: #656d71;
+    font-family: Roboto;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    cursor: pointer;
+    transition: .3s; }
+    .sale-popup .form__btns .form__btn-exit:hover {
+      color: #f9aa33; }
+
 .reviews {
   background: #232f34;
   color: #ffffff; }
