@@ -18,6 +18,7 @@
     @include horizon() {
         width: 100vw;
         margin-left: 0;
+        padding: 0 10px;
         left: 0;
     }
 
@@ -129,6 +130,7 @@
     @include horizon() {
         width: 100vw;
         margin-left: 0;
+        padding: 0 10px;
         left: 0;
     } 
 
@@ -239,6 +241,7 @@
 
     @include horizon() {
         width: 100vw;
+        padding: 0 10px;
         margin-left: 0;
         left: 0;
     } 
@@ -350,6 +353,7 @@
 
     @include horizon() {
         width: 100vw;
+        padding: 0 10px;
         margin-left: 0;
         left: 0;
     } 

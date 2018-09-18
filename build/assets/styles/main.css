@@ -490,7 +490,7 @@ ul {
       background: #ffffff; }
 
 .free {
-  height: 606px;
+  min-height: 606px;
   position: relative; }
   .free .free__img {
     background: url("../images/free-bg.png") no-repeat;
@@ -813,6 +813,7 @@ ul {
     .phone-popup {
       width: 100vw;
       margin-left: 0;
+      padding: 0 10px;
       left: 0; } }
   .phone-popup--active {
     display: flex; }
@@ -897,6 +898,7 @@ ul {
     .entry-popup {
       width: 100vw;
       margin-left: 0;
+      padding: 0 10px;
       left: 0; } }
   .entry-popup--active {
     display: flex; }
@@ -980,6 +982,7 @@ ul {
   @media screen and (max-width: 678px) {
     .free-popup {
       width: 100vw;
+      padding: 0 10px;
       margin-left: 0;
       left: 0; } }
   .free-popup--active {
@@ -1064,6 +1067,7 @@ ul {
   @media screen and (max-width: 678px) {
     .sale-popup {
       width: 100vw;
+      padding: 0 10px;
       margin-left: 0;
       left: 0; } }
   .sale-popup--active {
