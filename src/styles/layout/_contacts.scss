@@ -62,6 +62,7 @@
         cursor: pointer;
         margin-top: 50px;
         transition: .3s;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
 
         @include tablets() {
             margin-top: 20px;

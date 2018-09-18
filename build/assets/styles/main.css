@@ -196,7 +196,8 @@ ul {
     font-weight: 700;
     border: none;
     cursor: pointer;
-    transition: .3s; }
+    transition: .3s;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif; }
     .hero .hero__btn:hover {
       background: #ffffff; }
 
@@ -256,7 +257,8 @@ ul {
 
 .why {
   background: #232f34;
-  position: relative; }
+  position: relative;
+  padding-bottom: 100px; }
   .why .why__img {
     position: absolute;
     width: 770px;
@@ -306,8 +308,8 @@ ul {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 70px;
-  padding-bottom: 70px; }
+  padding-top: 45px;
+  padding-bottom: 45px; }
   @media screen and (max-width: 678px) {
     .callback .callback__container {
       flex-direction: column;
@@ -401,20 +403,17 @@ ul {
             border-left: none; } }
     .team .team__list .item__top {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between; }
+      flex-direction: row; }
       @media screen and (max-width: 880px) {
         .team .team__list .item__top {
           width: 100%;
           justify-content: space-around; } }
+    .team .team__list .item__img {
+      margin-right: 20px; }
     .team .team__list .top__text {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center; }
-      .team .team__list .top__text .item__title {
-        text-align: center; }
+      justify-content: center; }
 
 .talk {
   background: #232f34;
@@ -459,7 +458,7 @@ ul {
     display: flex;
     width: 100%; }
   .talk .slider__slide {
-    border-right: 1px solid #ffffff;
+    border-right: 2px solid #ffffff;
     padding: 20px;
     width: 50%; }
     @media screen and (max-width: 678px) {
@@ -487,7 +486,8 @@ ul {
     align-items: center;
     justify-content: center;
     transition: .3s;
-    margin-top: 70px; }
+    margin-top: 70px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif; }
     .talk .talk__link:hover {
       background: #ffffff; }
 
@@ -571,7 +571,8 @@ ul {
       border: none;
       margin-top: 50px;
       cursor: pointer;
-      transition: .3s; }
+      transition: .3s;
+      font-family: 'Roboto', Arial, Helvetica, sans-serif; }
       .free .free__form .form__btn:hover {
         background: #232f34;
         color: #ffffff; }
@@ -712,7 +713,8 @@ ul {
   border: none;
   cursor: pointer;
   margin-top: 50px;
-  transition: .3s; }
+  transition: .3s;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif; }
   @media screen and (max-width: 880px) {
     .contacts .info__btn {
       margin-top: 20px; } }
