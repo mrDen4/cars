@@ -56,9 +56,11 @@
     }
 
     .slider__slide {
-        border-right: 2px solid #ffffff;
+        border-right: 1px solid #ffffff;
+        border-left: 1px solid #ffffff;
         padding: 20px;
         width: 50%;
+        height: 400px;
 
         @include horizon() {
             padding: 0;
@@ -66,9 +68,9 @@
             width: 100%;
         }
 
-        &:nth-child(even) {
-            border-right: none;
-        }
+        // &:nth-child(even) {
+        //     border-right: none;
+        // }
 
         .slide__text {
             font-size: 16px;

@@ -456,16 +456,16 @@ ul {
     display: flex;
     width: 100%; }
   .talk .slider__slide {
-    border-right: 2px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
     padding: 20px;
-    width: 50%; }
+    width: 50%;
+    height: 400px; }
     @media screen and (max-width: 678px) {
       .talk .slider__slide {
         padding: 0;
         border: none;
         width: 100%; } }
-    .talk .slider__slide:nth-child(even) {
-      border-right: none; }
     .talk .slider__slide .slide__text {
       font-size: 16px; }
     .talk .slider__slide .slide__auth {
@@ -1326,7 +1326,8 @@ ul {
     min-height: 340px;
     margin-bottom: 50px;
     padding-top: 55px;
-    padding-left: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
     padding-bottom: 60px;
     display: flex;
     flex-direction: column;
