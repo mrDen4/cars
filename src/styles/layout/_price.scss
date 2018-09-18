@@ -3,7 +3,7 @@
     color: #ffffff;
 
     .price__container {
-        padding-top: 100px;
+        padding-top: 150px;
         padding-bottom: 50px;
 
         @include horizon() {
@@ -11,13 +11,120 @@
         }
     }
 
+    .price__top {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 40px;
+    }
+
     .price__title {
         font-size: 44px;
         font-weight: 700;
         line-height: 50.06px;
+        margin: 0;
+        margin-right: 40px;
 
         @include tablets() {
             text-align: center;
         }
+    }
+
+    .price__btn {
+        color: #f9aa33;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 28px;
+        text-decoration: underline;
+        text-transform: uppercase;
+        letter-spacing: 0.25px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        transition: .3s;
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+
+    .price__list {
+        display: flex;
+        flex-direction: column;
+
+        .price__item {
+            background-color: #2a3941;
+            padding: 10px 30px 10px 30px;
+            margin-bottom: 20px;
+        }
+
+        .item__top {
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .item__title {
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 50px;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        .item__arrow {
+            background: url('../images/table-arrow.png') center center no-repeat;
+            width: 28px;
+            height: 20px;
+        }
+
+        .item__wrap {
+            height: 0;
+            overflow: hidden;
+        }
+
+        .item__table {
+            width: 100%;
+            border-spacing: 0;
+
+            .table__row{
+                transition: .3s;
+
+                &:hover {
+                    background-color: lighten(#2a3941, 10%);
+                }
+
+                .table__col {
+                    padding: 14px 30px;
+                }
+
+                &:nth-child(odd) {
+                    background-color: #26343b;
+
+                    &:hover {
+                        background-color: lighten(#26343b, 10%);
+                    }
+                }
+
+                &:first-child {
+                    background-color: #f9aa33;
+                    color: #000000;
+
+                    &:hover {
+                        background-color: darken(#f9aa33, 10%);
+                    }
+                }
+            }
+        }
+
     }
 }
