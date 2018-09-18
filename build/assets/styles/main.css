@@ -32,7 +32,7 @@ ul {
   background: #2a3941;
   width: 100vw;
   min-height: 80px;
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 1000; }
   .header .header__container {
@@ -304,64 +304,62 @@ ul {
     .why .content__list .item__text {
       margin: 0; }
 
-.callback .callback__container {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 45px;
-  padding-bottom: 45px; }
-  @media screen and (max-width: 678px) {
-    .callback .callback__container {
-      flex-direction: column;
-      align-items: center; } }
-
-.callback .callback__title {
-  margin-right: 100px;
-  color: #232f34;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 30px; }
-  @media screen and (max-width: 678px) {
-    .callback .callback__title {
-      margin-right: 0px;
-      text-align: center; } }
-
-.callback .callback__btn, .callback .callback__btn--free-btn {
-  height: 50px;
-  width: 200px;
-  cursor: pointer;
-  background: #f9aa33;
-  border: none;
-  margin-right: 30px;
-  transition: .3s;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 28px;
-  text-transform: uppercase;
-  letter-spacing: 0.25px;
-  color: #232f34; }
-  @media screen and (max-width: 678px) {
-    .callback .callback__btn, .callback .callback__btn--free-btn {
-      margin-right: 0px;
-      margin-bottom: 20px; } }
-  .callback .callback__btn:hover, .callback .callback__btn--free-btn:hover {
-    background: #232f34;
-    color: #ffffff; }
-
-.callback .callback__link {
-  transition: .3s;
-  color: #232f34;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 28px;
-  text-decoration: underline;
-  text-transform: uppercase;
-  letter-spacing: 0.25px; }
-  .callback .callback__link:hover {
+.callback {
+  background: #2a3941;
+  color: #ffffff; }
+  .callback .callback__container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 45px;
+    padding-bottom: 45px; }
+    @media screen and (max-width: 678px) {
+      .callback .callback__container {
+        flex-direction: column;
+        align-items: center; } }
+  .callback .callback__title {
+    margin-right: 100px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 30px; }
+    @media screen and (max-width: 678px) {
+      .callback .callback__title {
+        margin-right: 0px;
+        text-align: center; } }
+  .callback .callback__btn, .callback .callback__btn--free-btn {
+    height: 50px;
+    width: 200px;
+    cursor: pointer;
+    background: #f9aa33;
+    border: none;
+    margin-right: 30px;
+    transition: .3s;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.25px; }
+    @media screen and (max-width: 678px) {
+      .callback .callback__btn, .callback .callback__btn--free-btn {
+        margin-right: 0px;
+        margin-bottom: 20px; } }
+    .callback .callback__btn:hover, .callback .callback__btn--free-btn:hover {
+      background: #ffffff;
+      color: #f9aa33; }
+  .callback .callback__link {
+    transition: .3s;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 28px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.25px;
     color: #f9aa33; }
+    .callback .callback__link:hover {
+      color: #ffffff; }
 
 .team {
   background-color: #232f34;
@@ -1525,7 +1523,6 @@ ul {
     flex-direction: column; }
     .price .price__list .price__item {
       background-color: #2a3941;
-      padding: 10px 30px 10px 30px;
       margin-bottom: 20px; }
     .price .price__list .item__top {
       background: none;
@@ -1534,7 +1531,11 @@ ul {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 100%; }
+      width: 100%;
+      transition: .3s;
+      padding: 10px 30px 10px 30px; }
+      .price .price__list .item__top:hover {
+        background-color: #3e5460; }
       .price .price__list .item__top:focus {
         outline: none; }
     .price .price__list .item__title {
@@ -1546,10 +1547,15 @@ ul {
     .price .price__list .item__arrow {
       background: url("../images/table-arrow.png") center center no-repeat;
       width: 28px;
-      height: 20px; }
+      height: 20px;
+      transition: .3s; }
+      .price .price__list .item__arrow--active {
+        transform: rotate(180deg); }
     .price .price__list .item__wrap {
       height: 0;
       overflow: hidden; }
+      .price .price__list .item__wrap--active {
+        height: 100%; }
     .price .price__list .item__table {
       width: 100%;
       border-spacing: 0; }

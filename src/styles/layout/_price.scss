@@ -55,7 +55,6 @@
 
         .price__item {
             background-color: #2a3941;
-            padding: 10px 30px 10px 30px;
             margin-bottom: 20px;
         }
 
@@ -67,6 +66,12 @@
             justify-content: space-between;
             align-items: center;
             width: 100%;
+            transition: .3s;
+            padding: 10px 30px 10px 30px;
+
+            &:hover {
+                background-color: lighten(#2a3941, 10%);
+            }
 
             &:focus {
                 outline: none;
@@ -85,11 +90,20 @@
             background: url('../images/table-arrow.png') center center no-repeat;
             width: 28px;
             height: 20px;
+            transition: .3s;
+
+            &--active {
+                transform: rotate(180deg);
+            }
         }
 
         .item__wrap {
             height: 0;
             overflow: hidden;
+
+            &--active {
+                height: 100%;
+            }
         }
 
         .item__table {

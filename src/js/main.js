@@ -96,6 +96,26 @@ $(document).ready(function () {
     return false;
 });
 
+  //Прайс-лист
+  $('.item__top').on('click', function() {
+    if ($('.item__wrap').hasClass('item__wrap--active')) {
+      console.log('true');
+      if ($(this).next('.item__wrap').hasClass('item__wrap--active')) {
+        $(this).next('.item__wrap').toggleClass('item__wrap--active');
+        $(this).children('.item__arrow').toggleClass('item__arrow--active');
+      } else {
+        $('.item__wrap').removeClass('item__wrap--active');
+        $('.item__arrow').removeClass('item__arrow--active');
+        $(this).next('.item__wrap').toggleClass('item__wrap--active');
+        $(this).children('.item__arrow').toggleClass('item__arrow--active');
+      }
+    } else {
+      console.log('false');
+      $(this).next('.item__wrap').toggleClass('item__wrap--active');
+      $(this).children('.item__arrow').toggleClass('item__arrow--active');
+    }
+  });
+
   //Слайдеры
   $('.talk__slider').slick({
     infinite: true,

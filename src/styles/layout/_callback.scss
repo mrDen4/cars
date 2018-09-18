@@ -1,4 +1,6 @@
 .callback {
+    background: #2a3941;
+    color: #ffffff;
 
     .callback__container {
         flex-direction: row;
@@ -15,7 +17,6 @@
 
     .callback__title {
         margin-right: 100px;
-        color: #232f34;
         font-family: 'Roboto', Arial, Helvetica, sans-serif;
         font-size: 36px;
         font-weight: 500;
@@ -41,7 +42,6 @@
         line-height: 28px;
         text-transform: uppercase;
         letter-spacing: 0.25px;
-        color: #232f34;
 
         @include horizon() {
             margin-right: 0px;
@@ -49,8 +49,8 @@
         }
 
         &:hover {
-            background: #232f34;
-            color: #ffffff;
+            background: #ffffff;
+            color: #f9aa33;
         }
     }
 
@@ -60,7 +60,6 @@
 
     .callback__link {
         transition: .3s;
-        color: #232f34;
         font-family: 'Roboto', Arial, Helvetica, sans-serif;        
         font-size: 14px;
         font-weight: 700;
@@ -68,9 +67,10 @@
         text-decoration: underline;
         text-transform: uppercase;
         letter-spacing: 0.25px;
+        color: #f9aa33;
 
         &:hover {
-            color: #f9aa33;
+            color: #ffffff;
         }
     }
 }
