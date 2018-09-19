@@ -1558,7 +1558,11 @@ ul {
         transform: rotate(180deg); }
     .price .price__list .item__wrap {
       height: 0;
+      width: 100%;
       overflow: hidden; }
+      @media screen and (max-width: 678px) {
+        .price .price__list .item__wrap {
+          overflow: scroll; } }
       .price .price__list .item__wrap--active {
         height: 100%; }
     .price .price__list .item__table {

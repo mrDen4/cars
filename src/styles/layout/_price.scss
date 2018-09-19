@@ -99,7 +99,12 @@
 
         .item__wrap {
             height: 0;
+            width: 100%;
             overflow: hidden;
+
+            @include horizon() {
+                overflow: scroll;
+            }
 
             &--active {
                 height: 100%;
