@@ -407,7 +407,8 @@ ul {
           width: 100%;
           justify-content: space-around; } }
     .team .team__list .item__img {
-      margin-right: 20px; }
+      margin-right: 20px;
+      height: 130px; }
     .team .team__list .top__text {
       display: flex;
       flex-direction: column;
@@ -433,7 +434,7 @@ ul {
     height: 31px;
     background: url("../images/arrow-right.png");
     position: absolute;
-    right: 10px;
+    right: 0px;
     top: 50%;
     z-index: 100;
     cursor: pointer; }
@@ -445,7 +446,7 @@ ul {
     height: 31px;
     background: url("../images/arrow-left.png");
     position: absolute;
-    left: 10px;
+    left: 0px;
     top: 50%;
     z-index: 100;
     cursor: pointer; }
@@ -1499,6 +1500,10 @@ ul {
     display: flex;
     align-items: flex-end;
     margin-bottom: 40px; }
+    @media screen and (max-width: 500px) {
+      .price .price__top {
+        flex-direction: column;
+        align-items: center; } }
   .price .price__title {
     font-size: 44px;
     font-weight: 700;
@@ -1508,6 +1513,10 @@ ul {
     @media screen and (max-width: 880px) {
       .price .price__title {
         text-align: center; } }
+    @media screen and (max-width: 500px) {
+      .price .price__title {
+        margin-right: 0;
+        margin-bottom: 40px; } }
   .price .price__btn {
     color: #f9aa33;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -1540,6 +1549,9 @@ ul {
       width: 100%;
       transition: .3s;
       padding: 10px 30px 10px 30px; }
+      @media screen and (max-width: 500px) {
+        .price .price__list .item__top {
+          padding: 10px 20px; } }
       .price .price__list .item__top:hover {
         background-color: #3e5460; }
       .price .price__list .item__top:focus {
@@ -1550,6 +1562,11 @@ ul {
       line-height: 50px;
       margin: 0;
       color: #ffffff; }
+      @media screen and (max-width: 500px) {
+        .price .price__list .item__title {
+          font-size: 20px;
+          line-height: 25px;
+          text-align: left; } }
     .price .price__list .item__arrow {
       background: url("../images/table-arrow.png") center center no-repeat;
       width: 28px;
