@@ -2,6 +2,15 @@
     min-height: 606px;
     position: relative;
 
+    .free__bg {
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        background: #232f34; 
+        z-index: -15;       
+    }
+
     .free__img {
         background: url('../images/free-bg.png') no-repeat;
         position: absolute;
@@ -9,6 +18,7 @@
         width: 50%;
         height: 100%;
         z-index: -10;
+        box-shadow: -60px 0px 30px rgba(0, 0, 0, 0.1);
 
         @include tablets() {
             width: 100%;

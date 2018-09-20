@@ -155,7 +155,8 @@ ul {
     position: absolute;
     right: 0;
     top: 0;
-    background: url("../images/hero-bg.png") center right no-repeat; }
+    background: url("../images/hero-bg.png") center right no-repeat;
+    box-shadow: 60px 0px 30px rgba(0, 0, 0, 0.1); }
     @media screen and (max-width: 880px) {
       .hero .hero__img {
         width: 100%; } }
@@ -264,7 +265,8 @@ ul {
     left: 0;
     width: 55%;
     height: 100%;
-    background: url("../images/why-bg.png") no-repeat; }
+    background: url("../images/why-bg.png") no-repeat;
+    box-shadow: -60px 0px 30px rgba(0, 0, 0, 0.1); }
     @media screen and (max-width: 880px) {
       .why .why__img {
         width: 100%;
@@ -495,13 +497,21 @@ ul {
 .free {
   min-height: 606px;
   position: relative; }
+  .free .free__bg {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background: #232f34;
+    z-index: -15; }
   .free .free__img {
     background: url("../images/free-bg.png") no-repeat;
     position: absolute;
     left: 0;
     width: 50%;
     height: 100%;
-    z-index: -10; }
+    z-index: -10;
+    box-shadow: -60px 0px 30px rgba(0, 0, 0, 0.1); }
     @media screen and (max-width: 880px) {
       .free .free__img {
         width: 100%;
