@@ -22,7 +22,7 @@
         right: 0;
         top: 0;
         background: url('../images/hero-bg.png') center right no-repeat;
-        box-shadow: inset 10px 0px 30px #232f34;        
+        box-shadow: inset -5px 0px 30px #232f34;        
 
         @include tablets() {
             width: 100%;
