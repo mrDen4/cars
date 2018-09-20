@@ -1,14 +1,14 @@
 .hero {
     background-color: #232f34;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
-    min-height: 620px;
+    min-height: 550px;
     position: relative;
     width: 100vw;
-    height: 75vh;
 
     .hero__container {
         padding-top: 100px;
         padding-bottom: 50px;
+        position: relative;
 
         @include tablets() {
             padding-top: 200px;
@@ -17,7 +17,7 @@
 
     .hero__img {
         height: 100%;
-        width: 80%;
+        width: 50%;
         position: absolute;
         right: 0;
         top: 0;

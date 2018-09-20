@@ -139,19 +139,19 @@ ul {
 .hero {
   background-color: #232f34;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
-  min-height: 620px;
+  min-height: 550px;
   position: relative;
-  width: 100vw;
-  height: 75vh; }
+  width: 100vw; }
   .hero .hero__container {
     padding-top: 100px;
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    position: relative; }
     @media screen and (max-width: 880px) {
       .hero .hero__container {
         padding-top: 200px; } }
   .hero .hero__img {
     height: 100%;
-    width: 80%;
+    width: 50%;
     position: absolute;
     right: 0;
     top: 0;
@@ -261,7 +261,8 @@ ul {
   padding-bottom: 100px; }
   .why .why__img {
     position: absolute;
-    width: 770px;
+    left: 0;
+    width: 55%;
     height: 100%;
     background: url("../images/why-bg.png") no-repeat; }
     @media screen and (max-width: 880px) {
@@ -270,6 +271,7 @@ ul {
         height: 100%; } }
   .why .why__container {
     align-items: flex-end;
+    position: relative;
     padding-bottom: 45px; }
   .why .why__content {
     display: flex;
@@ -508,7 +510,8 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    min-height: 600px; }
+    position: relative;
+    min-height: 606px; }
     @media screen and (max-width: 880px) {
       .free .free__container {
         flex-direction: column;

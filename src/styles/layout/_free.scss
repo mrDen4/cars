@@ -20,7 +20,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        min-height: 600px;
+        position: relative;
+        min-height: 606px;
 
         @include tablets() {
             flex-direction: column;

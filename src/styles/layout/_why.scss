@@ -5,7 +5,8 @@
 
     .why__img {
         position: absolute;
-        width: 770px;
+        left: 0;
+        width: 55%;
         height: 100%;
         background: url('../images/why-bg.png') no-repeat;
 
@@ -17,6 +18,7 @@
 
     .why__container {
         align-items: flex-end;
+        position: relative;
         padding-bottom: 45px;
     }
 
