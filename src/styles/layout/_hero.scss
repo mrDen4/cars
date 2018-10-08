@@ -17,11 +17,12 @@
 
     .hero__img {
         height: 100%;
-        width: 50%;
+        width: 100%;
         position: absolute;
         right: 0;
         top: 0;
         background: url('../images/hero-bg.png') center right no-repeat;
+        background-size: cover;
         box-shadow: inset -5px 0px 30px #232f34;        
 
         @include tablets() {
@@ -32,7 +33,7 @@
     .hero__content {
         display: flex;
         flex-direction: column;
-        width: 40vw;
+        width: 60vw;
         z-index: 50;
 
         @include tablets() {
