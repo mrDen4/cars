@@ -1,7 +1,7 @@
 .hero {
     background-color: #232f34;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
-    min-height: 550px;
+    // min-height: 550px;
     position: relative;
     width: 100vw;
 
@@ -21,9 +21,9 @@
         position: absolute;
         right: 0;
         top: 0;
-        background: url('../images/hero-bg.png') center right no-repeat;
+        background: url('../images/hero-bg.jpg') center right no-repeat;
         background-size: cover;
-        box-shadow: inset -5px 0px 30px #232f34;        
+        box-shadow: inset -5px 0px 30px #232f34;     
 
         @include tablets() {
             width: 100%;
@@ -43,9 +43,9 @@
 
     .hero__title {
         color: #ffffff;
-        font-size: 68px;
+        font-size: 44px;
         font-weight: 700;
-        line-height: 63px;
+        line-height: 50px;
 
         @include tablets() {
             width: 100%;
