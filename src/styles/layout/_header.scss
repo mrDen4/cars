@@ -2,9 +2,13 @@
     background: #2a3941;
     width: 100vw;
     min-height: 80px;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 1000;
+
+    @include tablets() {
+        position: absolute;
+    }
 
     .header__container {
         padding-top: 20px;
@@ -28,6 +32,7 @@
 
     .header__btn {
         position: absolute;
+        z-index: 999;
         width: 40px;
         height: 25px;
         left: 15px;
@@ -58,6 +63,7 @@
         transition: .3s;
 
         @include tablets() {
+            margin-top: 70px;
             padding-left: 50px;
         }
 
@@ -101,7 +107,13 @@
     }
 
     .phone {
-        
+
+        @include tablets() {
+            background: #2a3941;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
         @include horizon() {
             display: flex;
             flex-direction: column;

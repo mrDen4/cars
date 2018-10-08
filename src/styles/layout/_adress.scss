@@ -44,6 +44,21 @@
         }
     }
 
+    .info__text {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 38px;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        transition: .3s;
+
+        &:hover {
+            color: #f9aa33;
+            text-decoration: underline;
+        }
+    }
+
     .content__map {
         width: 65%;
         height: 600px;
