@@ -1,10 +1,10 @@
 .phone-popup {
     position: fixed;
     width: 470px;
-    height: 302px;
+    height: 370px;
     top: 50%;
     left: 50%;
-    margin-top: -151px;
+    margin-top: -185px;
     margin-left: -235px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     background-color: #ffffff;
@@ -47,7 +47,7 @@
         .form__inp {
             border: none;
             border-bottom: 1px solid #232f34;
-            margin-bottom: 35px;
+            // margin-bottom: 35px;
             padding: 10px;
 
             &:focus {
@@ -113,10 +113,10 @@
 .entry-popup {
     position: fixed;
     width: 470px;
-    height: 410px;
+    height: 460px;
     top: 50%;
     left: 50%;
-    margin-top: -205px;
+    margin-top: -230px;
     margin-left: -235px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     background-color: #ffffff;
@@ -225,10 +225,10 @@
 .free-popup {
     position: fixed;
     width: 470px;
-    height: 410px;
+    height: 460px;
     top: 50%;
     left: 50%;
-    margin-top: -205px;
+    margin-top: -230px;
     margin-left: -235px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     background-color: #ffffff;
@@ -337,10 +337,10 @@
 .sale-popup {
     position: fixed;
     width: 470px;
-    height: 410px;
+    height: 460px;
     top: 50%;
     left: 50%;
-    margin-top: -205px;
+    margin-top: -230px;
     margin-left: -235px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     background-color: #ffffff;

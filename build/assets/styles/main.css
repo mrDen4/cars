@@ -28,6 +28,16 @@ ul {
   padding: 0;
   list-style: none; }
 
+.g-recaptcha {
+  margin-top: 10px; }
+
+.form__policity {
+  color: #000000;
+  font-size: 10px; }
+  .form__policity a {
+    color: #000000;
+    text-decoration: underline; }
+
 .header {
   background: #2a3941;
   width: 100vw;
@@ -837,10 +847,10 @@ ul {
 .phone-popup {
   position: fixed;
   width: 470px;
-  height: 302px;
+  height: 370px;
   top: 50%;
   left: 50%;
-  margin-top: -151px;
+  margin-top: -185px;
   margin-left: -235px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   background-color: #ffffff;
@@ -874,7 +884,6 @@ ul {
     .phone-popup .phone-popup__form .form__inp {
       border: none;
       border-bottom: 1px solid #232f34;
-      margin-bottom: 35px;
       padding: 10px; }
       .phone-popup .phone-popup__form .form__inp:focus {
         outline: none; }
@@ -922,10 +931,10 @@ ul {
 .entry-popup {
   position: fixed;
   width: 470px;
-  height: 410px;
+  height: 460px;
   top: 50%;
   left: 50%;
-  margin-top: -205px;
+  margin-top: -230px;
   margin-left: -235px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   background-color: #ffffff;
@@ -1007,10 +1016,10 @@ ul {
 .free-popup {
   position: fixed;
   width: 470px;
-  height: 410px;
+  height: 460px;
   top: 50%;
   left: 50%;
-  margin-top: -205px;
+  margin-top: -230px;
   margin-left: -235px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   background-color: #ffffff;
@@ -1092,10 +1101,10 @@ ul {
 .sale-popup {
   position: fixed;
   width: 470px;
-  height: 410px;
+  height: 460px;
   top: 50%;
   left: 50%;
-  margin-top: -205px;
+  margin-top: -230px;
   margin-left: -235px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   background-color: #ffffff;

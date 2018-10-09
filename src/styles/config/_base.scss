@@ -31,3 +31,17 @@ margin: 0;
 padding: 0;
 list-style: none;
 }
+
+.g-recaptcha {
+  margin-top: 10px;
+}
+
+.form__policity {
+  color: #000000;
+  font-size: 10px;
+
+  a {
+    color: #000000;
+    text-decoration: underline;
+  }
+}
