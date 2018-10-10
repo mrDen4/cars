@@ -111,6 +111,7 @@
         @include tablets() {
             background: #2a3941;
             position: fixed;
+            padding-bottom: 9px;
             top: 0;
             width: 100%;
         }

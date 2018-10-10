@@ -120,6 +120,7 @@ ul {
     .header .phone {
       background: #2a3941;
       position: fixed;
+      padding-bottom: 9px;
       top: 0;
       width: 100%; } }
   @media screen and (max-width: 678px) {
@@ -193,7 +194,8 @@ ul {
     color: #ffffff;
     font-size: 44px;
     font-weight: 700;
-    line-height: 50px; }
+    line-height: 50px;
+    text-shadow: 2px 2px 3px #000; }
     @media screen and (max-width: 880px) {
       .hero .hero__title {
         width: 100%; } }
